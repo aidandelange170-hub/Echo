@@ -32,6 +32,18 @@ namespace EchoBooster
             VersionText.Text = "v3.0";
             SystemInfoText.Text = GetOperatingSystemInfo();
             
+            // Check for cached updates from previous session first
+            Task.Run(async () =>
+            {
+                await _updateManager.CheckForCachedUpdatesAsync();
+            });
+            
+            // Start background update checking (check every 30 minutes)
+            Task.Run(async () =>
+            {
+                await _updateManager.StartBackgroundUpdateCheckingAsync(TimeSpan.FromMinutes(30));
+            });
+            
             // Start auto-update check after a delay
             Task.Delay(3000).ContinueWith(_ => 
             {
