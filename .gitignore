@@ -1,35 +1,43 @@
 ```
-# Build results
+# Build artifacts
+*.obj
+*.exe
+*.dll
+*.pdb
+*.user
+*.userosscache
+*.suo
+*.cache
+*.nupkg
+*.snupkg
+
+# Output directories
 bin/
 obj/
 out/
-dist/
-build/
 
-# User-specific files
-.vs/
-.vscode/
-*.userprefs
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+# Dependencies
+packages/
+
+# Logs
+*.log
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
+
+# Editors
+.vs/
+.vscode/
+*.swp
+*.swo
 
 # OS generated files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-*~
+# Testing
+TestResults/
 ```
