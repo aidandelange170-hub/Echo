@@ -23,7 +23,6 @@ This application provides legitimate system monitoring and advanced optimization
 ## 🛠️ Technical Implementation
 
 The application is built with:
- qwen-code-337a011e-b6ab-44fb-8e37-4b34c1bd125d
 - 📅 C# (.NET 8.0) - Latest version with enhanced performance
 - 🎨 WPF (Windows Presentation Foundation) for modern UI
 - 📊 OxyPlot for data visualization
